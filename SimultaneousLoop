@@ -1,0 +1,24 @@
+class BabThread extends Thread
+{
+    public void run() {
+        int i=1;
+        while(i<=100)
+        {
+            System.out.println(i+" plane");
+            i++;
+        }
+    }
+}
+public class hegde
+{
+    public static void main(String[] args) {
+       BabThread bt=new BabThread();
+       bt.start();
+        int j=1;
+        while(j<=100)
+        {
+            System.out.println(j+" hyperloop");
+            j++;
+        }
+    }
+}
